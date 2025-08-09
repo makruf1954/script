@@ -1,12 +1,12 @@
-# GENOM SCRIPT VPS INSTALL
+#script vps 
 
-## 1. INSTALL
+## 1. untuk install
 
 ```
  apt update && apt upgrade -y && wget -q https://github.com/makruf1954/genom/raw/refs/heads/main/install && chmod +x install  && ./install
 ```
 
-## 2. UPDATE 
+## 2. untuk update
 
 ```
 cd root
@@ -18,8 +18,8 @@ wget https://github.com/makruf1954/genom/raw/refs/heads/main/menu/update.sh && c
 
 
 ```
-DOMAIN="ISI SUBDOMAIN"
-EMAIL="ISI EMAIL SUBDOMAIN"
+DOMAIN="domain kamu"
+EMAIL="email sub domain"
 /root/.acme.sh/acme.sh --set-default-ca --server zerossl && \
 /root/.acme.sh/acme.sh --register-account -m "$EMAIL" --server zerossl && \
 /root/.acme.sh/acme.sh --issue --standalone -d "$DOMAIN" -k ec-256 && \
