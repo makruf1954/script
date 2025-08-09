@@ -395,7 +395,7 @@ res11() {
     clear
 }
 
-# --- Proses Instalasi HOKAGE LEGEND ---
+# --- Proses Instalasi NAIFI PROJECT ---
 function SKT4100(){
     echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
     echo -e "${BIBlue}│ ${BGCOLOR}    PROCESS INSTALLED SSH WS / OPENVPN    ${NC}${BIBlue} │${NC}"

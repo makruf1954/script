@@ -37,7 +37,7 @@ chmod +x /usr/local/bin/ws-ovpn
 # Installing Service
 cat > /etc/systemd/system/ws-ovpn.service << END
 [Unit]
-Description=Python Proxy Mod By HOKAGE LEGEND
+Description=Python Proxy Mod By NAIFI PROJECT
 Documentation=https://t.me/hokagelegend1
 After=network.target nss-lookup.target
 
@@ -64,7 +64,7 @@ chmod +x /usr/local/bin/ws-stunnel
 # Installing Service
 cat > /etc/systemd/system/ws-stunnel.service << END
 [Unit]
-Description=Python Proxy Mod By HOKAGE LEGEND
+Description=Python Proxy Mod By NAIFI PROJECT
 Documentation=https://t.me/hokagelegend1
 After=network.target nss-lookup.target
 

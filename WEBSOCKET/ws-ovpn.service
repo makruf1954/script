@@ -1,5 +1,5 @@
 [Unit]
-Description=Python Proxy Mod By HOKAGE LEGEND
+Description=Python Proxy Mod By NAIFI PROJECT
 Documentation=https://t.me/hokagelegend1
 After=network.target nss-lookup.target
 

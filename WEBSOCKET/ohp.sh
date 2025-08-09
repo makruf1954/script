@@ -1,6 +1,6 @@
 #!/bin/bash
 # Ohp Script
-# Mod By HOKAGE LEGEND
+# Mod By NAIFI PROJECT
 # ==========================================
 # Color
 RED='\033[0;31m'

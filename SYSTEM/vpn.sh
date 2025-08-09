@@ -1,5 +1,5 @@
 #!/bin/bash
-# Mod By HOKAGE LEGEND 
+# Mod By NAIFI PROJECT 
 
 # By SKT AIO
 # ==================================================
