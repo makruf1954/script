@@ -1,10 +1,8 @@
-## script vps 
-
-
+## SCRIPT VPS
 
 First, make sure that you have root access to the VPS, What is also needed is permission on my repo, and also your domain which is already connected to the VPS, you can use Cloudflare or others to connect it
 
-## How to Root Access
+## how to root access
 ```
 wget -qO- -O aksesroot.sh https://raw.githubusercontent.com/makruf1954/script/refs/heads/main/root.sh && bash root.sh
 ```
@@ -15,7 +13,7 @@ wget -qO- -O aksesroot.sh https://raw.githubusercontent.com/makruf1954/script/re
  apt update && apt upgrade -y && wget -q https://github.com/makruf1954/script/raw/refs/heads/main/install && chmod +x install  && ./install
 ```
 
-## How to Update
+## how to update
 
 ```
 cd root
