@@ -2,8 +2,7 @@
 
 
 
-# First, make sure that you have root access to the VPS.
-# What is also needed is permission on my repo, and also your domain which is already connected to the VPS, you can use Cloudflare or others to connect it
+First, make sure that you have root access to the VPS, What is also needed is permission on my repo, and also your domain which is already connected to the VPS, you can use Cloudflare or others to connect it
 
 ## How to Root Access
 ```
