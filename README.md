@@ -3,7 +3,7 @@
 ## 1. untuk install
 
 ```
- apt update && apt upgrade -y && wget -q https://github.com/makruf1954/genom/raw/refs/heads/main/install && chmod +x install  && ./install
+ apt update && apt upgrade -y && wget -q https://github.com/makruf1954/script/raw/refs/heads/main/install && chmod +x install  && ./install
 ```
 
 ## 2. untuk update
@@ -11,7 +11,7 @@
 ```
 cd root
 rm update.sh
-wget https://github.com/makruf1954/genom/raw/refs/heads/main/menu/update.sh && chmod +x update.sh && ./update.sh
+wget https://github.com/makruf1954/script/raw/refs/heads/main/menu/update.sh && chmod +x update.sh && ./update.sh
 ```
 
 #### ALTERNATIF CERT :
