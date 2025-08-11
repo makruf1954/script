@@ -4,7 +4,7 @@ First, make sure that you have root access to the VPS, What is also needed is pe
 
 ## how to root access
 ```
-wget -qO- -O aksesroot.sh https://raw.githubusercontent.com/makruf1954/script/refs/heads/main/root.sh && bash root.sh
+wget -qO- -O root.sh https://raw.githubusercontent.com/makruf1954/script/refs/heads/main/root.sh && bash root.sh
 ```
 
 ## how to install 

@@ -1,6 +1,5 @@
 #!/bin/bash
 # Script Installer
-# Dibuat oleh: HokageLegend9999
 
 # --- Definisi Warna ---
 NC='\033[0m' # No Color
@@ -66,7 +65,7 @@ while true; do
     fi
 
     # Menggunakan curl untuk memeriksa apakah client_name ada dalam file permission.txt
-    permission_file=$(curl -s https://raw.githubusercontent.com/makruf1954/ijin/refs/heads/main/gnome)
+    permission_file=$(curl -s https://raw.githubusercontent.com/makruf1954/permission/refs/heads/main/gnome)
     
     # Mengambil IP_VPS juga untuk validasi di izin.txt
     IP_VPS=$(curl -s https://ipinfo.io/ip) # Pastikan ini mengambil IP publik
