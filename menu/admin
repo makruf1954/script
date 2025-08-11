@@ -91,7 +91,7 @@ if check_ip_and_get_info "$IP_VPS"; then
     echo -e "${GREEN}✅ Lisensi valid. Sisa masa aktif: $days_remaining hari.${NC}"
     sleep 2
 else
-    echo -e "${RED}❌ IP tidak terdaftar!${NC}"
+    echo -e "${RED}❌ Your IP is not registered in the license!${NC}"
     echo -e "➥ Hubungi admin ${CYAN}「 ✦ @Azure10 ✦ 」${NC}"
     exit 1
 fi
