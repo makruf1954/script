@@ -334,98 +334,77 @@ clear
 get_sys_info
 get_net_info
 clear
-
-# Fungsi typing
-TYPING_SPEED=0.002
-typing_echo() {
-    local text="$1"
-    local speed="${2:-$TYPING_SPEED}"
-    while IFS= read -r -n1 char; do
-        printf "%s" "$char"
-        sleep "$speed"
-    done <<< "$text"
-    echo
-}
-
-# Header
+clear && clear && clear
+clear;clear;clear
 echo -e "$COLOR1╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}            ${WH}• NAIFI PROJECT PREMIUM •            ${NC} $COLOR1│${NC}"
+echo -e "$COLOR1│${NC} ${COLBG1}            ${WH}• NAIFI PROJECT PREMIUM •            ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
-
-# Info Server
 echo -e "$COLOR1╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│ $NC${WH}❈ System OS          ${COLOR1}: ${WH}$MODEL2${NC}"
-echo -e "$COLOR1│ $NC${WH}❈ Memory Usage       ${COLOR1}: ${WH}$uram / $tram${NC}"
-echo -e "$COLOR1│ $NC${WH}❈ Core & CPU Usage   ${COLOR1}: ${WH}$CORE Core & $cpu_usage${NC}"
-echo -e "$COLOR1│ $NC${WH}❈ ISP                ${COLOR1}: ${WH}$ISP${NC}"
-echo -e "$COLOR1│ $NC${WH}❈ City               ${COLOR1}: ${WH}$CITY${NC}"
-echo -e "$COLOR1│ $NC${WH}❈ Domain             ${COLOR1}: ${WH}$(cat /etc/xray/domain)${NC}"
+echo -e "$COLOR1│ $NC${WH}❈ System OS          ${COLOR1}: ${WH}$MODEL2"
+echo -e "$COLOR1│ $NC${WH}❈ Memory Usage       ${COLOR1}: ${WH}$uram / $tram"
+echo -e "$COLOR1│ $NC${WH}❈ Core & CPU Usage   ${COLOR1}: ${WH}$CORE Core & $cpu_usage"
+echo -e "$COLOR1│ $NC${WH}❈ ISP                ${COLOR1}: ${WH}$ISP"
+echo -e "$COLOR1│ $NC${WH}❈ City               ${COLOR1}: ${WH}$CITY"
+echo -e "$COLOR1│ $NC${WH}❈ Domain             ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
 echo -e "$COLOR1│ $NC${WH}❈ IP-VPS             ${COLOR1}: ${WH}$IPVPS${NC}"
 echo -e "$COLOR1│ $NC${WH}❈ Uptime             ${COLOR1}: ${WH}$SERONLINE${NC}"
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
-
-# Status Service
 echo -e "$COLOR1╭═════════════════ • ${NC}${WH}STATUS SERVER${NC}${COLOR1} • ═══════════════╮${NC}"
-echo -e " ${WH} SSH WS : ${status_ws}  XRAY : ${status_xray}  NGINX : ${status_nginx}  DROPBEAR : ${status_beruangjatuh}${NC}"
+echo -e " ${WH} SSH WS : ${status_ws} ${WH} XRAY : ${status_xray} ${WH} NGINX : ${status_nginx} ${WH} DROPBEAR : ${status_beruangjatuh}$NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
-
-# List Account
 echo -e "   $COLOR1╭════════════════════════════════════════════╮${NC}"
-echo -e "            ${WH}LIST ACCOUNT PREMIUM${NC}"
-echo -e "   $COLOR1      ═════════════════════════════════${NC}"
-echo -e "            ${WH}SSH     = ${COLOR1}$total_ssh${NC} ${WH}ACCOUNT${NC}"
-echo -e "            ${WH}VMESS   = ${COLOR1}$vmess${NC} ${WH}ACCOUNT${NC}"
-echo -e "            ${WH}VLESS   = ${COLOR1}$vless${NC} ${WH}ACCOUNT${NC}"
-echo -e "            ${WH}TROJAN  = ${COLOR1}$trtls${NC} ${WH}ACCOUNT${NC}"
+echo -e "            $COLOR1$NC${WH}    LIST ACCOUNT PREMIUM ${NC}"
+echo -e "   $COLOR1      ═════════════════════════════════ ${NC}"
+echo -e "            $COLOR1$NC${WH}    SSH     =  ${COLOR1}$total_ssh ${NC}${WH} ACCOUNT ${NC}"
+echo -e "            $COLOR1$NC${WH}    VMESS   =  ${COLOR1}$vmess ${NC}${WH} ACCOUNT ${NC}"
+echo -e "            $COLOR1$NC${WH}    VLESS   =  ${COLOR1}$vless ${NC}${WH} ACCOUNT ${NC}"
+echo -e "            $COLOR1$NC${WH}    TROJAN  =  ${COLOR1}$trtls ${NC}${WH} ACCOUNT${NC}"
 echo -e "   $COLOR1╰═════════════════════════════════════════════╯${NC}"
-
-# Menu List (Typing Effect)
 echo -e "$COLOR1╭═══════════════════ • ${NC}${WH}LIST MENU${NC}${COLOR1} • ═════════════════╮${NC}"
-menu_list=$(cat <<EOF
-[01] • SSH VPN      [06] • RUNNING
-[02] • VMESS        [07] • RESTART
-[03] • VLESS        [08] • REBOOT
-[04] • TROJAN       [09] • UPDATE
-[05] • BACKUP       [10] • SETTING
+echo -e "$COLOR1│                                                   $COLOR1│ $NC"
+echo -e "$COLOR1│ ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}SSH VPN  ${WH}[${COLOR1}Menu${WH}]     ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}RUNNING  ${WH}[${COLOR1}Menu${WH}]$COLOR1 │ $NC"
+echo -e "$COLOR1│ ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}VMESS    ${WH}[${COLOR1}Menu${WH}]     ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}RESTART  ${WH}[${COLOR1}Menu${WH}]$COLOR1 │ $NC"
+echo -e "$COLOR1│ ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}VLESS    ${WH}[${COLOR1}Menu${WH}]     ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}REBOOT   ${WH}[${COLOR1}Menu${WH}]$COLOR1 │ $NC"
+echo -e "$COLOR1│ ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}TRJAN    ${WH}[${COLOR1}Menu${WH}]     ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}UPDATE   ${WH}[${COLOR1}Menu${WH}]$COLOR1 │ $NC"
+echo -e "$COLOR1│ ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}BACKUP   ${WH}[${COLOR1}Menu${WH}]     ${WH}[${COLOR1}10${WH}]${NC} ${COLOR1}• ${WH}SETTING  ${WH}[${COLOR1}Menu${WH}]$COLOR1 │ $NC"
+echo -e "$COLOR1│                                                   $COLOR1│ $NC"
+echo -e "${BLUE}╭═══════${PURPLE}══════ • ${GREEN}CHECK USER ONLINE${YELLOW} • ${RED}═══════════════╮${NC}"
+echo -e "${CYAN}│PILIH NOMOR${NC} ${MAGENTA}[12] ${YELLOW}🔍 MELIHAT STATUS USER YANG ONLINE${NC}│"
+echo -e "${YELLOW}╰══${GREEN}==================${BLUE}══=======${PURPLE}══════════════════════${RED}╯${NC}"
 
-[12] 🔍 CEK USER ONLINE
-[15] 🧬 AKSES GENOM PRO ADMIN 🧬
-EOF
-)
-typing_echo "$menu_list"
+echo -e "${MAGENTA}╭═══════${CYAN}══════ • ${RED}GENOM SCRIPT PRO${BLUE} • ${GREEN}═══════════════╮${NC}"
+echo -e "${YELLOW}│PILIH NOMOR${NC} ${CYAN}  [15]    ${WH}🧬 AKSESS GENOM PRO ADMIN 🧬${NC}│"
+echo -e "${BLUE}╰══${RED}==================${GREEN}══=======${CYAN}══════════════════════${MAGENTA}╯${NC}"
+echo -e "$COLOR1│                                                   $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
-
-# Traffic Info
 echo -e "$COLOR1╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│ ${WH}Traffic${NC}      ${WH}Today     Yesterday       Month${NC}"
-echo -e "$COLOR1│ ${COLOR1}Total${NC}    ${COLOR1}$todayd $today_v    $yesterday $yesterday_v     $month $month_v${NC}"
+echo -e "$COLOR1│ ${WH}Traffic${NC}      ${WH}Today     Yesterday       Month       ${NC}"
+echo -e "$COLOR1│ ${COLOR1}Total${NC}    ${COLOR1}  $todayd $today_v    $yesterday $yesterday_v     $month $month_v$COLOR1  ${NC} "
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
 
-# Script Info
 echo -e "$COLOR1╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│ ${WH}Versi Script  ${COLOR1}: ${WH}$(cat /opt/.ver) Latest Version${NC}"
-echo -e "$COLOR1│ ${WH}Author        ${COLOR1}: ${WH}NAIFI PROJECT${NC}"
-echo -e "$COLOR1│ ${WH}Client        ${COLOR1}: ${WH}$client_name${NC}"
-echo -e "$COLOR1│ ${WH}Sisa Hari     ${COLOR1}: ${WH}$days_remaining hari${NC}"
-echo -e "$COLOR1│ ${WH}Expire Date   ${COLOR1}: ${WH}$exp_date${NC}"
+echo -e "$COLOR1│ $NC ${WH}Versi Script  ${COLOR1}: ${WH}$(cat /opt/.ver) Latest Version${NC}$COLOR1"
+echo -e "$COLOR1│ $NC ${WH}Author        ${COLOR1}: ${WH}NAIFI PROJECT${NC}$COLOR1"
+echo -e "$COLOR1│ $NC ${WH}Client        ${COLOR1}: ${WH}$client_name${NC}"
+echo -e "$COLOR1│ $NC ${WH}Sisa Hari     ${COLOR1}: ${WH}$days_remaining hari${NC}"
+echo -e "$COLOR1│ $NC ${WH}Expire Date   ${COLOR1}: ${WH}$exp_date${NC}"
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
-
-# Input
-echo -ne " ${WHITE}Select menu ${COLOR1}: ${WHITE}"
-read opt
+echo -e ""
+echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 case $opt in
-  01|1) clear; sshws ;;
-  02|2) clear; m-vmess ;;
-  03|3) clear; m-vless ;;
-  04|4) clear; m-trojan ;;
-  05|5) clear; menu-backup ;;
-  06|6) clear; cekservice ;;
-  07|7) clear; running ;;
-  08|8) clear; reboot ;;
-  09|9) clear; m-update ;;
-  10) clear; system ;;
-  12) clear; online ;;
-  15) clear; admin ;;
-  00|0) clear; menu ;;
-  *) clear; menu ;;
+01 | 1) clear ; sshws ;;
+02 | 2) clear ; m-vmess ;;
+03 | 3) clear ; m-vless ;;
+04 | 4) clear ; m-trojan ;;
+05 | 5) clear ; menu-backup;;
+06 | 6) clear ; cekservice ;;
+07 | 7) clear ; running ;;
+08 | 8) clear ; reboot ;;
+09 | 9) clear ; m-update ;;
+10 | 10) clear ; system ;;
+11 | 11) clear ; menu-backup;;
+12 | 12) clear ; online;;
+15 | 15) clear ; admin;;
+00 | 0) clear ; menu ;;
+*) clear ; menu ;;
 esac
